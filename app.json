@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "SGR Smart ",
+    "slug": "sistema-di-gestione-ristorante",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.rork.sistema-di-gestione-ristorante"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.rork.sistema-di-gestione-ristorante"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "manifest": {
+        "short_name": "SGR",
+        "name": "SGR Smart Restaurant Management",
+        "start_url": ".",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#2563eb",
+        "icons": [
+          {
+            "src": "./assets/images/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "./assets/images/adaptive-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+        ]
+      }
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://rork.app/"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

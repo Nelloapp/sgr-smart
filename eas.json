@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 3.13.3"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "IL_TUO_APPLE_ID",
+        "ascAppId": "ID_APP_STORE_CONNECT",
+        "appleTeamId": "TEAM_ID_APPLE"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./path-to-google-service-account.json"
+      }
+    }
+  }
+}
