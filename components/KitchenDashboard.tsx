@@ -71,7 +71,7 @@ export const KitchenDashboard: React.FC<KitchenDashboardProps> = ({
     setExpandedOrderId(expandedOrderId === orderId ? null : orderId);
   };
   
-  const handlePrintToKitchen = (order: Order) => {\n  const foodItems = order.items.filter(item => item.type === 'food');\n  printOrderToKitchen(order, foodItems);\n};\n
+  const handlePrintToKitchen = (order: Order) => {  const foodItems = order.items.filter(item => item.type === 'food');  printOrderToKitchen(order, foodItems);};
   const renderOrderCard = (order: Order) => {
     // Filtra solo gli elementi di cibo
     const foodItems = order.items.filter(item => item.type === 'food');
