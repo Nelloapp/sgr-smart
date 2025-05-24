@@ -458,4 +458,17 @@ const styles = StyleSheet.create({
   },
 });
 
-const handlePrintToBar = (order: Order) => {\n  const drinkItems = order.items.filter(item => item.type === 'drink');\n  printOrderToBar(order, drinkItems);\n};\n<TouchableOpacity\n  style={styles.printButton}\n  onPress={() => handlePrintToBar(order)}\n>\n  <Text style={styles.printButtonText}>Stampa Bar</Text>\n</TouchableOpacity>\n\n// ... existing code ...
+const handlePrintToBar = (order: Order) => {
+  const drinkItems = order.items.filter(item => item.type === 'drink');
+  printOrderToBar(order, drinkItems);
+};
+
+<TouchableOpacity
+  style={styles.printButton}
+  onPress={() => handlePrintToBar(order)}
+>
+  <Text style={styles.printButtonText}>Stampa Bar</Text>
+</TouchableOpacity>
+
+// ... codice esistente ...
+
